@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/20 text-center text-white/60 text-sm font-bold">
-          <p>© 2024 Galpão Continental. Todos os direitos reservados. Beba com moderação.</p>
+          <p>© 2026 Galpão Continental. Todos os direitos reservados. Beba com moderação.</p>
         </div>
       </div>
     </footer>
