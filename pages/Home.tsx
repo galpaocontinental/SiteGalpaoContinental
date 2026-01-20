@@ -11,18 +11,18 @@ const Home: React.FC<HomeProps> = ({ onAddToCart }) => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <header className="hero-pattern text-white py-16 md:py-32 relative overflow-hidden">
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-4xl md:text-7xl font-black mb-4 tracking-tighter uppercase italic">
-            CERVEJA <span className="text-primary">GELADA</span>
-          </h2>
-          <p className="text-xl md:text-3xl font-light max-w-2xl mx-auto opacity-90 mb-10">
-            Do galpão direto pra geladeira do seu bar!
-          </p>
-          <a href="#ofertas" className="bg-primary hover:bg-orange-600 text-white font-black py-5 px-12 rounded-full transition-all transform hover:scale-105 shadow-2xl inline-block text-lg">
-            VER OFERTAS DE HOJE
-          </a>
-        </div>
+      <header 
+        className="text-white py-16 md:py-32 relative overflow-hidden"
+        style={{
+          backgroundImage: `url(${IMAGES.HERO_BANNER})`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#305aa6',
+          minHeight: '220px'
+        }}
+      >
+        <div className="container mx-auto px-6 relative z-10 text-center" />
         <div className="absolute top-0 left-0 w-full h-4 bg-orange-500 opacity-30"></div>
       </header>
 
