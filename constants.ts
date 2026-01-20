@@ -1,4 +1,6 @@
 
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export const IMAGES = {
   LOGO: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAjnPc_jsdSONZqpscpR7t_ZVAxs4_dKeU_T6L_9k48-KRbcvRgX68i2azxCa2N1L_mAeka9kVpayCT1WMgfy8qxbdaTtDXJ1UR4SLOCauQJNhxyBRNes4FEeXnzD_RzQXKdrn_OqB8rfZpgTWnTvXTqqUqr347kYCUQGN-wb48h-exHgAkMzYM7BxRyV4GMdrXEhnuUkgYopNAMBJIfWHJVGyybL8MDu3-VydatfFaTkNB7p7-lW7jQDF1FZwfOaxWK3Yh9zf-pJ4',
   HEINEKEN: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBovHQuvkEcgN_e49kHZWQiW8R2M9goDXtKirFzU5s3O9ytRbO-gcBmd4Ym5NduT8I9ZA1w6SUVW96dempzjY88qmlHZIwG_KoZ4K0QcRuAd9sejeLPM35luw9XmWVWBojOUipSZZHa4tdoYw9MJ8yzdR5-ABI6b8jvdhd6zfs1rh-M_lIVKUTDctzOmOYXbHJ2lYUT5OMhvUOBUVOl9feWGRxHR_4fBz-lJn4iENY_vaMAcgKiyEOKlGf5Uku9sm0j6swJ5bM0I9I',
@@ -6,13 +8,13 @@ export const IMAGES = {
   ORIGINAL: 'https://lh3.googleusercontent.com/aida-public/AB6AXuByrvSXzPRiKnRWFruauaYO9dM68-o82RQm_77D6ercjkk9N7Lu0XitVFnutsg9ZXay9otar2VyNl-yg7YMANev8zn14K36LlAfsuWz39vpUnwFK45nm-LM6d7Z4rrpkDueqzKklHmZUlKpUM0P045QdLgUoR6s7X0fmZxr8qDLMGW--87WAuAO7fIh3MuSz_RtaJrcc7dRJs9UxCUV8r14BFKMVAWGEGHOwCFgXE17WhBQRW0hzBjRKb596B9wotm-FRRTex2koc',
   SPATEN: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAVn07PqPkRci5JfoHGqvecC2GFEPKchKa5m3QpPq71cUjwQTIt7QW1ZGQaprKzYXZFV2Gl1z8TtrkcuC-XgmzSZvIaXq0fOslm--3NaOGqZhjn1UaQBrXrXimaO6q6zuqQT4AizsHcCd0s-1NLqITr8DouCsRE1J_VcwJnGvaZuPb9jqSwALCzceQ3IxD88OfwxaB5Muym-lWc2V7y2sCXvyNIDwuMrD96NUWOjLdTfAxuivhYG1jvTPav7kbdPWLN7aNLsQ2kt-E',
   LOGISTICS: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw5CRI20E6q2ZEZAS9dbod4disyWb8O7_sQiZqyhLVn1RLOSFWohQG_TKN5RolNRFzA8gTbsDkkanikxaidTRY952sPPYNY8j8joDzEgLYewxGlIojr30kXzxmcMzvkvxM-zAbFdTcAdY3uckwU3e9oFYQ1YPGWWbzeL4TUdnjPQIEiADoar4qjaLdiKLbFxnewPj72AUdEcr55Bm38FRnuPMiV4P2-9pUPnNRLSdIeFoGpsfIAPB4q3F35sO2O0-0QKw44JXudmI',
-  ABOUT_HERO: 'assets/images/about_hero.png',
-  MAP: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCnZ48e9Ek0vUG19R1j-QbqU_OQw_AKYhRKcyA45u1kNA08ILGVeicYok13gqFH6wnNYcJkRk56xEj5_DqILdhS4Ixx0esUmIc2Pr8YQC6jBoRrjZa7g-5hIxdZHHf7qduuAUbswwg9bwfcOCpJDyrvNWLgnfkRVNLx9r5UqXNwkzf8l-5F2AfcGI5U6XPW1T4vDhji4mVyzAu33EG3nzja5V-xHr8RYTzadpbGxlkIwEB21_rmKB2i1ZAZ73SDjRk98Woy7ETr3Ws'
+  ABOUT_HERO: withBase('assets/images/about_hero.jpeg'),
+  MAP: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450' role='img' aria-label='Mapa de exemplo do Google Maps'><defs><linearGradient id='g' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='%23f7f9fb'/><stop offset='100%' stop-color='%23e2e8f0'/></linearGradient></defs><rect width='800' height='450' fill='url(%23g)'/><path d='M80 60h120v20H80zM60 110h90v18H60zM200 120h120v20H200zM360 80h160v24H360zM560 140h140v22H560zM520 200h140v22H520zM120 200h120v22H120zM300 260h160v24H300z' fill='%23d1d9e6'/><path d='M180 60v330M320 80v240M480 80v240M640 140v180M60 200h660' stroke='%23c0c8d8' stroke-width='6' stroke-linecap='round'/><circle cx='420' cy='190' r='46' fill='%23cbe4ff' stroke='%2382b6f6' stroke-width='6'/><path d='M420 134c-24 0-44 19-44 43 0 30 28 70 40 87a6 6 0 0 0 8 1c1 0 40-55 40-88 0-24-20-43-44-43Zm0 24a19 19 0 1 1 0 38 19 19 0 0 1 0-38Z' fill='%23e63946' stroke='%23c22030' stroke-width='4'/><rect x='510' y='20' rx='10' ry='10' width='260' height='90' fill='%23ffffff' stroke='%23cbd5e1' stroke-width='4'/><text x='640' y='55' font-family='Montserrat,Arial,sans-serif' font-size='20' font-weight='700' fill='%233256a8' text-anchor='middle'>Google Maps</text><text x='640' y='82' font-family='Montserrat,Arial,sans-serif' font-size='16' font-weight='700' fill='%233256a8' text-anchor='middle'>Pré-visualização</text><text x='400' y='420' font-family='Montserrat,Arial,sans-serif' font-size='18' font-weight='700' fill='%23475569' text-anchor='middle'>Av. Francisco Ettore Pedro Mari, 555 - Jardim Frei Galvao, Taboão da Serra - SP</text></svg>"
 };
 
 export const CONTACT_INFO = {
   PHONE: '(11) 96404-2721',
   WHATSAPP: '5511964042721',
   EMAIL: 'contato@galpaocontinental.com.br',
-  ADDRESS: 'Av. Francisco Etorre Pedro Mari, 555 - CEP: 06753-000'
+  ADDRESS: 'Av. Francisco Ettore Pedro Mari, 555 - Jardim Frei Galvao, Taboão da Serra - SP'
 };

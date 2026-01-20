@@ -10,13 +10,13 @@ const Contact: React.FC = () => {
         <p className="text-lg text-blue-100 max-w-2xl mx-auto">Peça agora ou solicite um orçamento para o seu estabelecimento.</p>
       </div>
 
-      <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-16">
-          <div className="space-y-10">
+      <div className="container mx-auto px-6 py-20 overflow-x-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full">
+          <div className="space-y-10 w-full max-w-full">
             <div>
               <h2 className="text-3xl font-black text-brand-blue dark:text-white mb-6 uppercase tracking-tight">Canais de Atendimento</h2>
               <div className="grid gap-6">
-                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary">
+                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
                   <div className="bg-primary/10 p-4 rounded-full">
                     <span className="material-icons text-primary">phone_iphone</span>
                   </div>
@@ -26,20 +26,20 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary">
+                <div className="flex items-center space-x-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-primary w-full max-w-full">
                   <div className="bg-primary/10 p-4 rounded-full">
                     <span className="material-icons text-primary">email</span>
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase">E-mail Corporativo</p>
-                    <p className="text-xl font-black text-brand-blue dark:text-white">{CONTACT_INFO.EMAIL}</p>
+                    <p className="text-xl font-black text-brand-blue dark:text-white break-words">{CONTACT_INFO.EMAIL}</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden shadow-2xl relative h-80">
-               <img src={IMAGES.MAP} alt="Localização" className="w-full h-full object-cover" />
+            <div className="rounded-3xl overflow-hidden shadow-2xl relative h-80 w-full max-w-full">
+               <img src={IMAGES.MAP} alt="Localização" className="w-full h-full object-cover bg-slate-200" loading="lazy" />
                <div className="absolute inset-0 bg-brand-blue/20 flex items-center justify-center">
                   <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONTACT_INFO.ADDRESS)}`} target="_blank" className="bg-brand-blue text-white px-8 py-3 rounded-full font-bold shadow-2xl flex items-center space-x-2 transform hover:scale-105 transition-all">
                     <span className="material-icons">location_on</span>
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-8 lg:p-12 border border-slate-100 dark:border-slate-700">
+          <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-8 lg:p-12 border border-slate-100 dark:border-slate-700 w-full max-w-full">
             <h2 className="text-3xl font-black text-brand-blue dark:text-white mb-8">ENVIE UMA MENSAGEM</h2>
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid md:grid-cols-2 gap-6">
