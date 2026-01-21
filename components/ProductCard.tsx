@@ -53,12 +53,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, volume, price, img, isP
           </div>
         </div>
       </div>
-      <button 
-        type="button"
-        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors cursor-pointer"
+      <a 
+        href="https://wa.me/5511964042721"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full bg-slate-100 dark:bg-slate-700 text-brand-blue dark:text-white py-4 font-bold uppercase text-sm hover:bg-brand-blue hover:text-white transition-colors cursor-pointer text-center block"
       >
         Falar com vendedor
-      </button>
+      </a>
     </div>
   );
 };
