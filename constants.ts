@@ -12,8 +12,8 @@ export const IMAGES = {
 };
 
 export const CONTACT_INFO = {
-  PHONE: '(11) 96404-2721,
-  WHATSAPP: '(11) 96404-2721,
+  PHONE: '(11) 96404-2721',
+  WHATSAPP: '(11) 96404-2721',
   EMAIL: 'contato@galpaocontinental.com.br',
   ADDRESS: 'Av. Francisco Etorre Pedro Mari, 555 - Taboão da Serra, SP'
 };
