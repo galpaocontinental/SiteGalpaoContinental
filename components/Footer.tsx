@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           </div>
           
           <a 
-            href={`https://wa.me/${CONTACT_INFO.WHATSAPP}`} 
+             href={`https://wa.me/+55${CONTACT_INFO.WHATSAPP}?text=Olá, gostaria de falar sobre as promoções disponíveis.`} 
             target="_blank" 
             className="bg-brand-blue hover:bg-brand-blue-dark text-white px-10 py-5 rounded-2xl flex items-center space-x-6 shadow-2xl transition-all transform hover:scale-105 group"
           >
