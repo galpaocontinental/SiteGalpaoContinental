@@ -73,5 +73,20 @@
 <body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://chatwoot.polygonconsulting.com.br";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'Q1Rxkc12pdqzcDwdVG2Jp4qm',
+            baseUrl: BASE_URL
+          });
+        };
+      })(document,"script");
+    </script>
 </body>
 </html>
